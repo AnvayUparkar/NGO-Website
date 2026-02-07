@@ -19,18 +19,18 @@ export const Navbar = ({ currentPage, onNavigate }) => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: 'spring', stiffness: 100, damping: 20 }}
-      className="fixed top-4 left-0 right-0 z-50 pointer-events-none"
+      className="fixed top-2 sm:top-4 left-0 right-0 z-50 pointer-events-none"
     >
-      <div className="mx-auto w-full max-w-4xl px-4">
+      <div className="mx-auto w-full max-w-4xl px-3 sm:px-4">
         <div className="pointer-events-auto glass border border-[rgba(var(--border-color),0.2)] rounded-full shadow-lg w-fit mx-auto">
-          <div className="flex items-center justify-between h-16 px-6 whitespace-nowrap">
+          <div className="flex items-center justify-between h-14 sm:h-16 px-4 sm:px-6 whitespace-nowrap">
           <motion.div
             className="flex items-center gap-2 cursor-pointer"
             whileHover={{ scale: 1.05 }}
             onClick={() => onNavigate('home')}
           >
             
-            <span className="text-xl font-bold bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">
+            <span className="text-lg sm:text-xl font-bold bg-gradient-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">
               NGO App
             </span>
           </motion.div>
