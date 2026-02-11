@@ -7,7 +7,7 @@ export const UserManualPage = () => {
     {
       icon: <HelpCircle className="w-8 h-8" />,
       title: 'NGO',
-      description: 'Learn the basiccs of managing your NGO account',
+      description: 'Learn the basics of managing your NGO account',
       content: [
         { subtitle: 'Create Account', link: '#create-account' },
         { subtitle: 'Add Events', link: '#add-events' },
@@ -17,7 +17,7 @@ export const UserManualPage = () => {
     {
       icon: <Users className="w-8 h-8" />,
       title: 'College',
-      description: 'Learn the basiccs of managing your College account',
+      description: 'Learn the basics of managing your College account',
       content: [
         { subtitle: 'Register Volunteers', link: '#register-volunteers' },
         { subtitle: 'Assign Tasks', link: '#assign-tasks' },
@@ -26,22 +26,12 @@ export const UserManualPage = () => {
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: 'admin',
-      description: 'Master the dashboard and analytics',
+      title: 'Admin Only',
+      description: 'Master admin controls and system management',
       content: [
-        { subtitle: 'add NGO', link: '#add-ngo' },
-        { subtitle: 'add college', link: '#add-college' },
-        { subtitle: 'register new admin', link: '#register-new-admin' },
-      ],
-    },
-    {
-      icon: <Settings className="w-8 h-8" />,
-      title: 'Settings & Configuration',
-      description: 'Customize your experience',
-      content: [
-        { subtitle: 'Theme Settings', link: '#theme-settings' },
-        { subtitle: 'Notification Preferences', link: '#notifications' },
-        { subtitle: 'Organization Details', link: '#org-details' },
+        { subtitle: 'Add NGO', link: '#add-ngo' },
+        { subtitle: 'Add College', link: '#add-college' },
+        { subtitle: 'Register New Admin', link: '#register-new-admin' },
       ],
     },
   ];
@@ -105,7 +95,7 @@ export const UserManualPage = () => {
 
       {/* MAIN SECTIONS */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {manualSections.map((section, index) => (
             <motion.div
               key={index}
